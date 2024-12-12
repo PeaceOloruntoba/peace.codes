@@ -21,7 +21,7 @@ DrawerPortal.displayName = DrawerPrimitive.Portal.displayName;
 const DrawerOverlay = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Overlay>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Overlay>
->(({ className, ...props }, ref) => (
+>(({ className, ...props }: any, ref: any) => (
   <DrawerPrimitive.Overlay
     className={mergeClasses(
       'fixed inset-0 z-50 bg-gray-900/10 opacity-100 backdrop-blur-sm',
@@ -55,7 +55,7 @@ interface DrawerContentProps
 const DrawerContent = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Content>,
   DrawerContentProps
->(({ side = 'right', className, children, ...props }, ref) => (
+>(({ side = 'right', className, children, ...props }: any, ref: any) => (
   <DrawerPortal>
     <DrawerOverlay />
     <DrawerPrimitive.Content
