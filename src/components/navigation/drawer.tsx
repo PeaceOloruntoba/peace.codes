@@ -11,7 +11,7 @@ const DrawerTrigger = DrawerPrimitive.Trigger;
 const DrawerClose = DrawerPrimitive.Close;
 
 const DrawerPortal = ({
-  className,
+  className,  
   ...props
 }: DrawerPrimitive.DialogPortalProps) => (
   <DrawerPrimitive.Portal className={mergeClasses(className)} {...props} />
