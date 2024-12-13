@@ -1,38 +1,38 @@
 import { Github, Twitter, Figma } from 'lucide-react';
 
-import LogoJavascript from '/public/images/logos/icon-javascript.svg';
-import LogoTypescript from '/public/images/logos/icon-typescript.svg';
-import LogoReact from '/public/images/logos/icon-react.svg';
-import LogoNextjs from '/public/images/logos/icon-nextjs.svg';
-import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
-import LogoExpress from '/public/images/logos/icon-express.svg';
-import LogoExpressLight from '/public/images/logos/icon-express-light.svg';
-import LogoNest from '/public/images/logos/icon-nest.svg';
-import LogoSocket from '/public/images/logos/icon-socket.svg';
-import LogoSocketLight from '/public/images/logos/icon-socket-light.svg';
-import LogoPostgreSQL from '/public/images/logos/icon-postgresql.svg';
-import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
-import LogoSass from '/public/images/logos/icon-sass.svg';
-import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
-import LogoFigma from '/public/images/logos/icon-figma.svg';
-import LogoCypress from '/public/images/logos/icon-cypress.svg';
-import LogoCypressLight from '/public/images/logos/icon-cypress-light.svg';
-import LogoStorybook from '/public/images/logos/icon-storybook.svg';
-import LogoGit from '/public/images/logos/icon-git.svg';
+import LogoJavascript from '../../public/images/logos/icon-javascript.svg';
+import LogoTypescript from '../../public/images/logos/icon-typescript.svg';
+import LogoReact from '../../public/images/logos/icon-react.svg';
+import LogoNextjs from '../../public/images/logos/icon-nextjs.svg';
+import LogoNodejs from '../../public/images/logos/icon-nodejs.svg';
+import LogoExpress from '../../public/images/logos/icon-express.svg';
+import LogoExpressLight from '../../public/images/logos/icon-express-light.svg';
+import LogoNest from '../../public/images/logos/icon-nest.svg';
+import LogoSocket from '../../public/images/logos/icon-socket.svg';
+import LogoSocketLight from '../../public/images/logos/icon-socket-light.svg';
+import LogoPostgreSQL from '../../public/images/logos/icon-postgresql.svg';
+import LogoMongoDB from '../../public/images/logos/icon-mongodb.svg';
+import LogoSass from '../../public/images/logos/icon-sass.svg';
+import LogoTailwindcss from '../../public/images/logos/icon-tailwindcss.svg';
+import LogoFigma from '../../public/images/logos/icon-figma.svg';
+import LogoCypress from '../../public/images/logos/icon-cypress.svg';
+import LogoCypressLight from '../../public/images/logos/icon-cypress-light.svg';
+import LogoStorybook from '../../public/images/logos/icon-storybook.svg';
+import LogoGit from '../../public/images/logos/icon-git.svg';
 
-import LogoUpwork from '/public/images/logos/logo-upwork.svg';
-import LogoGreenApex from '/public/images/logos/logo-greenapex.svg';
-import LogoGreenApexLight from '/public/images/logos/logo-greenapex-light.svg';
-import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg';
-import LogoDotnpixelLight from '/public/images/logos/logo-dotnpixel-light.svg';
+import LogoUpwork from '../../public/images/logos/logo-upwork.svg';
+import LogoGreenApex from '../../public/images/logos/logo-greenapex.svg';
+import LogoGreenApexLight from '../../public/images/logos/logo-greenapex-light.svg';
+import LogoDotnpixel from '../../public/images/logos/logo-dotnpixel.svg';
+import LogoDotnpixelLight from '../../public/images/logos/logo-dotnpixel-light.svg';
 
-import ProjectFiskil from '/public/images/project-fiskil.png';
-import ProjectWingie from '/public/images/project-wingie.png';
-import ProjectPepehousing from '/public/images/project-pepehousing.png';
+import ProjectFiskil from '../../public/images/project-fiskil.png';
+import ProjectWingie from '../../public/images/project-wingie.png';
+import ProjectPepehousing from '../../public/images/project-pepehousing.png';
 
-import AvatarKrisztian from '/public/images/avatar-krisztian.png';
-import AvatarEugen from '/public/images/avatar-eugen.png';
-import AvatarDummy from '/public/images/avatar-dummy.svg';
+import AvatarKrisztian from '../../public/images/avatar-krisztian.png';
+import AvatarEugen from '../../public/images/avatar-eugen.png';
+import AvatarDummy from '../../public/images/avatar-dummy.svg';
 
 import {
   ExperienceDetails,
