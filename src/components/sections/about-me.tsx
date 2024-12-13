@@ -39,22 +39,22 @@ const AboutMeSection = () => {
               noCustomization
               externalLink
               withUnderline
-              href={EXTERNAL_LINKS.FIGMA}
+              href={EXTERNAL_LINKS.GITHUB}
             >
-              self-proclaimed designer
+              self-proclaimed software engineer
             </Link>{' '}
-            who specializes in full stack development (React.js & Node.js). I am
+            who specializes in full stack development (React.js & Django). I am
             enthusiastic about bringing the technical and visual aspects of
             digital products to life. User experience, pixel perfect design, and
             writing clear, readable, highly performant code matters to me.
           </Typography>
           <Typography>
-            I began my journey as a web developer in 2015, and since then,
+            I began my journey as a web developer in 2021, and since then,
             I&apos;ve continued to grow and evolve as a developer, taking on new
             challenges and learning the latest technologies along the way. Now,
-            in my early thirties, 7 years after starting my web development
+            in my early twenties, 3 years after starting my web development
             journey, I&apos;m building cutting-edge web applications using
-            modern technologies such as Next.js, TypeScript, Nestjs,
+            modern technologies such as Next.js, TypeScript, Nodesjs, Express,
             Tailwindcss, Supabase and much more.
           </Typography>
           <Typography>
