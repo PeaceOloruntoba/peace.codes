@@ -8,7 +8,7 @@ interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const Tag = React.forwardRef<HTMLDivElement, TagProps>(
-  ({ label, className, ...props }: TagProps, ref) => {
+  ({ label, className, ...props }: TagProps) => {
     return (
       <div
         className={mergeClasses(
