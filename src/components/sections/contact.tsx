@@ -12,8 +12,8 @@ import Container from '@/components/layout/container';
 import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
 
-let email = 'reachsagarshah@gmail.com';
-let phone = '+91 8980500565';
+const email = 'reachsagarshah@gmail.com';
+const phone = '+91 8980500565';
 
 type CopyValue = 'email' | 'phone';
 
@@ -29,12 +29,12 @@ const ContactSection = () => {
       await copyTextToClipboard(text);
       setIsCopied(true);
       setCopiedValueType(type);
-      let timoutId: any = setTimeout(() => {
+      const timoutId: ReturnType<typeof setTimeout> = setTimeout(() => {
         setIsCopied(false);
         setCopiedValueType(null);
         clearTimeout(timoutId);
       }, 1500);
-    } catch (error) {
+    } catch {
       setIsCopied(false);
       setCopiedValueType(null);
       alert('Unable to copy!');
@@ -48,7 +48,7 @@ const ContactSection = () => {
           <Tag label="Get in touch" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          What’s next? Feel free to reach out to me if you are looking for a
+          What&apos;s next? Feel free to reach out to me if you are looking for a
           developer, have a query, or simply want to connect.
         </Typography>
       </div>
