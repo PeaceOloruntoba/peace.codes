@@ -1,4 +1,4 @@
-import { Github, Twitter, Figma, Instagram } from 'lucide-react';
+import { Github, Twitter, Instagram } from 'lucide-react';
 
 import LogoJavascript from '../../public/images/logos/icon-javascript.svg';
 import LogoTypescript from '../../public/images/logos/icon-typescript.svg';
