@@ -31,4 +31,4 @@ If you are looking for a figma file, you can find it **[here](https://www.figma.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/shahsagarm/peace.codes/blob/main/LICENSE).
+Licensed under the [MIT license](https://github.com/PeaceOloruntoba/peace.codes/blob/main/LICENSE).
