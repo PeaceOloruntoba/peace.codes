@@ -42,9 +42,9 @@ import {
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
-  GITHUB: 'https://github.com/shahsagarm',
-  GITHUB_REPO: 'https://github.com/shahsagarm/sagarshah.dev',
-  TWITTER: 'https://twitter.com/shahsagarm',
+  GITHUB: 'https://github.com/PeaceOloruntoba',
+  GITHUB_REPO: 'https://github.com/PeaceOloruntoba/peace.codes',
+  TWITTER: 'https://twitter.com/PeaceEdgeTech',
   FIGMA: 'https://www.figma.com/@shahsagarm',
   FIGMA_FILE:
     'https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop',
