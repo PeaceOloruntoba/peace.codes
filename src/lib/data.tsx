@@ -173,19 +173,19 @@ export const EXPERIENCES: ExperienceDetails[] = [
   {
     logo: LogoUpwork,
     logoAlt: 'Upwork logo',
-    position: 'Independent Freelancer',
-    startDate: new Date(2021, 10),
+    position: 'Full Stack Developer',
+    startDate: new Date(2023, 4),
     currentlyWorkHere: true,
     summary: [
-      'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
-      'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
+      'Worked on mobile app using Flutter, Dart, React Native, Expo.',
+      'Worked on web app, including JavaScript, Node, React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
     ],
   },
   {
     logo: LogoGreenApex,
     darkModeLogo: LogoGreenApexLight,
     logoAlt: 'Greenapex logo',
-    position: 'Team Lead',
+    position: 'Software Developer Intern',
     startDate: new Date(2017, 6),
     endDate: new Date(2021, 9),
     summary: [
