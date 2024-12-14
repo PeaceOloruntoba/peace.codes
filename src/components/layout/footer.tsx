@@ -1,8 +1,8 @@
-import { Copyright } from 'lucide-react';
+import { Copyright } from "lucide-react";
 
-import Typography from '@/components/general/typography';
-import Link from '@/components/navigation/link';
-import { EXTERNAL_LINKS } from '@/lib/data';
+import Typography from "@/components/general/typography";
+import Link from "@/components/navigation/link";
+import { EXTERNAL_LINKS } from "@/lib/data";
 
 const Footer = () => {
   return (
@@ -19,14 +19,14 @@ const Footer = () => {
           >
             Designed
           </Link>
-          &nbsp;and&nbsp;
+          &nbsp; by Shagar and&nbsp;
           <Link
             noCustomization
             externalLink
             withUnderline
             href={EXTERNAL_LINKS.GITHUB_REPO}
           >
-            coded
+            Coded
           </Link>
           &nbsp;with ❤️️ by Peace Oloruntoba - PeaceCodes
         </Typography>
