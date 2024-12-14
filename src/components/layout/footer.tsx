@@ -28,7 +28,7 @@ const Footer = () => {
           >
             coded
           </Link>
-          &nbsp;with ❤️️ by Sagar Shah
+          &nbsp;with ❤️️ by Peace Oloruntoba - PeaceCodes
         </Typography>
       </div>
     </footer>
