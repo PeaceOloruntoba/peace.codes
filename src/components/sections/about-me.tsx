@@ -110,5 +110,3 @@ const AboutMeSection = () => {
 };
 
 export default AboutMeSection;
-
-"?>A
