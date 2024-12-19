@@ -21,8 +21,8 @@ import LogoStorybook from "../../public/images/logos/icon-storybook.svg";
 import LogoGit from "../../public/images/logos/icon-git.svg";
 
 import LogoUpwork from "../../public/images/logos/logo-upwork.svg";
-import LogoGreenApex from "../../public/images/logos/logo-bct.jpeg";
-import LogoGreenApexLight from "../../public/images/logos/logo-bct.jpeg";
+import LogoGreenApex from "../../public/images/logos/logo-bct.png";
+import LogoGreenApexLight from "../../public/images/logos/logo-bct.png";
 import LogoDotnpixel from "../../public/images/logos/logo-trusoft.jpg";
 import LogoDotnpixelLight from "../../public/images/logos/logo-trusoft.jpg";
 
