@@ -23,8 +23,8 @@ import LogoGit from "../../public/images/logos/icon-git.svg";
 import LogoUpwork from "../../public/images/logos/logo-bunzi.png";
 import LogoGreenApex from "../../public/images/logos/logo-bct.png";
 import LogoGreenApexLight from "../../public/images/logos/logo-bct.png";
-import LogoDotnpixel from "../../public/images/logos/logo-trusoft.jpg";
-import LogoDotnpixelLight from "../../public/images/logos/logo-trusoft.jpg";
+import LogoDotnpixel from "../../public/images/logos/logo-trusoft.png";
+import LogoDotnpixelLight from "../../public/images/logos/logo-trusoft.png";
 
 import ProjectFiskil from "../../public/images/project-fiskil.png";
 import ProjectWingie from "../../public/images/project-wingie.png";
