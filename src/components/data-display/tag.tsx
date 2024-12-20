@@ -8,9 +8,10 @@ interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const Tag = React.forwardRef<HTMLDivElement, TagProps>(
-  ({ label, className, ...props }: TagProps) => {
+  ({ label, className, ...props }: TagProps, ref) => {
     return (
       <div
+        ref={ref}
         className={mergeClasses(
           'flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1',
           className
