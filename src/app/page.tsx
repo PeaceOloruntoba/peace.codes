@@ -13,8 +13,8 @@ export default function Home() {
       <AboutMeSection />
       <SkillsSection />
       <ExperienceSection />
-      <WorkSection />
-      <TestimonialsSection />
+      {/* <WorkSection /> */}
+      {/* <TestimonialsSection /> */}
       <ContactSection />
     </>
   );
