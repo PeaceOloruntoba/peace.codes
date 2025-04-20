@@ -274,7 +274,7 @@ export const TESTIMONIALS: TestimonialDetails[] = [
     personAvatar: AvatarKrisztian,
     title: "Founder - inboxgenie.io",
     testimonial:
-      "Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.",
+      "Job well done! I am really impressed. He is very very good at what he does:) I would recommend Peace and will rehire in the future for Frontend development.",
   },
   {
     personName: "Eugen Esanu",
@@ -288,6 +288,6 @@ export const TESTIMONIALS: TestimonialDetails[] = [
     personAvatar: AvatarDummy,
     title: "Freelancer",
     testimonial:
-      "Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.",
+      "Peace was extremely easy and pleasant to work with and he truly cares about the project being a success. Peace has a high level of knowledge and was able to work on my MERN stack application without any issues.",
   },
 ];
