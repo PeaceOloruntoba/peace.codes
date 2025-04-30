@@ -172,6 +172,17 @@ export const TECHNOLOGIES: TechDetails[] = [
 export const EXPERIENCES: ExperienceDetails[] = [
   {
     logo: LogoUpwork,
+    logoAlt: "MarketIN logo",
+    position: "Software Engineer",
+    startDate: new Date(2025, 0),
+    currentlyWorkHere: true,
+    summary: [
+      "Worked on mobile app using Flutter, Dart, React Native, Expo.",
+      "Worked on web app, including JavaScript, Node, React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.",
+    ],
+  },
+  {
+    logo: LogoUpwork,
     logoAlt: "Upwork logo",
     position: "Full Stack Developer",
     startDate: new Date(2023, 4),
