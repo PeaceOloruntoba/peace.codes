@@ -1,4 +1,4 @@
-import { Github, Twitter, Instagram } from "lucide-react";
+import { Github, Twitter, Instagram, Linkedin } from "lucide-react";
 
 import LogoJavascript from "../../public/images/logos/icon-javascript.svg";
 import LogoTypescript from "../../public/images/logos/icon-typescript.svg";
@@ -19,6 +19,7 @@ import LogoCypress from "../../public/images/logos/icon-cypress.svg";
 import LogoCypressLight from "../../public/images/logos/icon-cypress-light.svg";
 import LogoStorybook from "../../public/images/logos/icon-storybook.svg";
 import LogoGit from "../../public/images/logos/icon-git.svg";
+import LogoMarketIn from "../../public/images/logos/logo.png";
 
 import LogoUpwork from "../../public/images/logos/logo-bunzi.png";
 import LogoGreenApex from "../../public/images/logos/logo-bct.png";
@@ -80,6 +81,10 @@ export const SOCIAL_LINKS = [
   {
     icon: Instagram,
     url: "https://www.instagram.com/peacecodes22",
+  },
+  {
+    icon: Linkedin,
+    url: "https://www.linkedin.com/in/peasca-inc/",
   },
 ];
 
@@ -171,7 +176,7 @@ export const TECHNOLOGIES: TechDetails[] = [
 
 export const EXPERIENCES: ExperienceDetails[] = [
   {
-    logo: LogoUpwork,
+    logo: LogoMarketIn,
     logoAlt: "MarketIN logo",
     position: "Software Engineer",
     startDate: new Date(2025, 0),
@@ -223,26 +228,26 @@ export const EXPERIENCES: ExperienceDetails[] = [
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: "Wingie",
+    name: "Kunibi Software",
     description:
-      "A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.",
-    url: "https://www.wingie.com",
+      "A platform for fashion designers and stylists, as well as users and customers getting their wears and new trend styles easily in a few simple clicks.",
+    url: "https://kunibi.vercel.app",
     previewImage: ProjectWingie,
     technologies: [
       "React",
-      "Typescript",
-      "React Bootstrap",
-      "Firebase",
+      "JavaScript",
+      "Zustand",
+      "Tailwindcss",
       "Express.js",
-      "PostgreSQL",
+      "MongoDB",
       "Styled Components",
-      "Redux",
+      "Context AI",
     ],
   },
   {
-    name: "Fiskil",
+    name: "Nikita Restaurant AI",
     description:
-      "A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.",
+      "A platform for restaurants to help you grow your business and leverage on the use of personalised trained AI, backed with scalable back-end infrastructure. and AI system",
     url: "https://fiskil.com.au",
     previewImage: ProjectFiskil,
     technologies: [
@@ -264,7 +269,7 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: "Pepehousing",
     description:
-      "A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
+      "A platform for renting a flat or room in Nigeria. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
     url: "https://pepehousing.com",
     previewImage: ProjectPepehousing,
     technologies: [
