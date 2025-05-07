@@ -29,7 +29,7 @@ import LogoDotnpixelLight from "../../public/images/logos/logo-trusoft.png";
 
 import ProjectNikita from "../../public/images/nikita.png";
 import ProjectKunibi from "../../public/images/kunibi.jpeg";
-import ProjectPepehousing from "../../public/images/project-pepehousing.png";
+import ProjectEsther from "../../public/images/esther.jpeg";
 
 import AvatarKrisztian from "../../public/images/avatar-krisztian.png";
 import AvatarEugen from "../../public/images/avatar-eugen.png";
@@ -275,7 +275,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A platform for renting a flat or room in Nigeria. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
     url: "https://esther-ekoko.vercel.app",
-    previewImage: ProjectPepehousing,
+    previewImage: ProjectEsther,
     technologies: [
       "React",
       "Next.js",
@@ -290,7 +290,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A platform for renting a flat or room in Nigeria. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
     url: "https://nigeria-states-free-api.onrender.com/",
-    previewImage: ProjectPepehousing,
+    previewImage: ProjectEsther,
     technologies: [
       "JavaScript",
       "Node.js",
