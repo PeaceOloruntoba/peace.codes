@@ -28,7 +28,7 @@ import LogoDotnpixel from "../../public/images/logos/logo-trusoft.png";
 import LogoDotnpixelLight from "../../public/images/logos/logo-trusoft.png";
 
 import ProjectNikita from "../../public/images/nikita.png";
-import ProjectWingie from "../../public/images/project-wingie.png";
+import ProjectKunibi from "../../public/images/kunibi.jpeg";
 import ProjectPepehousing from "../../public/images/project-pepehousing.png";
 
 import AvatarKrisztian from "../../public/images/avatar-krisztian.png";
@@ -232,7 +232,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A platform for fashion designers and stylists, as well as users and customers getting their wears and new trend styles easily in a few simple clicks.",
     url: "https://kunibi.vercel.app",
-    previewImage: ProjectWingie,
+    previewImage: ProjectKunibi,
     technologies: [
       "React",
       "JavaScript",
