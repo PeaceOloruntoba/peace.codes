@@ -27,7 +27,7 @@ import LogoGreenApexLight from "../../public/images/logos/logo-bct.png";
 import LogoDotnpixel from "../../public/images/logos/logo-trusoft.png";
 import LogoDotnpixelLight from "../../public/images/logos/logo-trusoft.png";
 
-import ProjectFiskil from "../../public/images/project-fiskil.png";
+import ProjectNikita from "../../public/images/nikita.png";
 import ProjectWingie from "../../public/images/project-wingie.png";
 import ProjectPepehousing from "../../public/images/project-pepehousing.png";
 
@@ -251,7 +251,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A cross-platform software for restaurants to help you grow your business and leverage on the use of personalized trained AI, backed with scalable back-end infrastructure. and AI system",
     url: "https://nikita-theta.vercel.app",
-    previewImage: ProjectFiskil,
+    previewImage: ProjectNikita,
     technologies: [
       "React",
       "Node.js",
