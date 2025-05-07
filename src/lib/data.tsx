@@ -289,7 +289,7 @@ export const PROJECTS: ProjectDetails[] = [
     name: "Nigeria States API",
     description:
       "A platform for renting a flat or room in Nigeria. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
-    url: "https://esther-ekoko.vercel.app",
+    url: "https://nigeria-states-free-api.onrender.com/",
     previewImage: ProjectPepehousing,
     technologies: [
       "JavaScript",
