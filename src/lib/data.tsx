@@ -2,6 +2,16 @@ import { Github, Twitter, Instagram, Linkedin } from "lucide-react";
 
 import LogoJavascript from "../../public/images/logos/icon-javascript.svg";
 import LogoTypescript from "../../public/images/logos/icon-typescript.svg";
+import LogoPython from "../../public/images/logos/icon-python.svg";
+import LogoDjango from "../../public/images/logos/icon-django.svg";
+import LogoFastApi from "../../public/images/logos/icon-fastapi.svg";
+import LogoFlask from "../../public/images/logos/icon-flask.svg";
+import LogoPHP from "../../public/images/logos/icon-php.svg";
+import LogoLaravel from "../../public/images/logos/icon-laravel.svg";
+import LogoSymphony from "../../public/images/logos/icon-symphony.svg";
+import LogoGo from "../../public/images/logos/icon-go.svg";
+import LogoJava from "../../public/images/logos/icon-django.svg";
+import LogoCSharp from "../../public/images/logos/icon-django.svg";
 import LogoReact from "../../public/images/logos/icon-react.svg";
 import LogoNextjs from "../../public/images/logos/icon-nextjs.svg";
 import LogoNodejs from "../../public/images/logos/icon-nodejs.svg";
@@ -175,34 +185,42 @@ export const TECHNOLOGIES: TechDetails[] = [
   // Additional languages and frameworks
   {
     label: "Python",
+    logo: LogoPython,
     url: "https://www.python.org/",
   },
   {
     label: "Django",
+    logo: LogoDjango,
     url: "https://www.djangoproject.com/",
   },
   {
     label: "FastAPI",
+    logo: LogoFastApi,
     url: "https://fastapi.tiangolo.com/",
   },
   {
     label: "Flask",
+    logo: LogoFlask,
     url: "https://flask.palletsprojects.com/",
   },
   {
     label: "PHP",
+    logo: LogoPHP,
     url: "https://www.php.net/",
   },
   {
     label: "Laravel",
+    logo: LogoLaravel,
     url: "https://laravel.com/",
   },
   {
     label: "Symfony",
+    logo: LogoSymphony,
     url: "https://symfony.com/",
   },
   {
     label: "Go",
+    logo: LogoGo,
     url: "https://go.dev/",
   },
   {
