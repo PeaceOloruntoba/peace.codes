@@ -172,6 +172,67 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoGit,
     url: "https://git-scm.com/",
   },
+  // Additional languages and frameworks
+  {
+    label: "Python",
+    url: "https://www.python.org/",
+  },
+  {
+    label: "Django",
+    url: "https://www.djangoproject.com/",
+  },
+  {
+    label: "FastAPI",
+    url: "https://fastapi.tiangolo.com/",
+  },
+  {
+    label: "Flask",
+    url: "https://flask.palletsprojects.com/",
+  },
+  {
+    label: "PHP",
+    url: "https://www.php.net/",
+  },
+  {
+    label: "Laravel",
+    url: "https://laravel.com/",
+  },
+  {
+    label: "Symfony",
+    url: "https://symfony.com/",
+  },
+  {
+    label: "Go",
+    url: "https://go.dev/",
+  },
+  {
+    label: "Gin (Go)",
+    url: "https://gin-gonic.com/",
+  },
+  {
+    label: "Echo (Go)",
+    url: "https://echo.labstack.com/",
+  },
+  {
+    label: "Java",
+    url: "https://www.oracle.com/java/",
+  },
+  {
+    label: "Spring Boot",
+    url: "https://spring.io/projects/spring-boot",
+  },
+  {
+    label: "C#",
+    url: "https://dotnet.microsoft.com/languages/csharp",
+  },
+  {
+    label: ".NET",
+    url: "https://dotnet.microsoft.com/",
+  },
+  {
+    label: "ASP.NET Core",
+    url: "https://learn.microsoft.com/aspnet/core",
+  },
 ];
 
 export const EXPERIENCES: ExperienceDetails[] = [

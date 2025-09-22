@@ -33,9 +33,9 @@ const HeroSection = () => {
             <Typography>
               I&apos;m a full stack developer (Python & JavaScript) with a focus
               on creating exceptional digital experiences that are fast,
-              accessible, visually appealing, and responsive. Even though I have
-              been creating web applications for over 3 years, I still love it
-              as if it was something new.
+              accessible, visually appealing, and responsive. I&apos;ve been
+              creating web applications for over {new Date().getFullYear() - 2021} years,
+              and I still love it as if it were something new.
             </Typography>
           </div>
           <div className="flex flex-col gap-2">

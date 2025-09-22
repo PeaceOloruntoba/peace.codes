@@ -12,13 +12,15 @@ const inter = Inter({ subsets: ['latin'] });
 const title = 'PeaceCodes | Peace Oloruntoba.';
 const description =
   'An aspiring software engineer, expert Full Stack Developer, Web, Mobile, Blockchain, developer';
-const url = 'https://peacecodes.run.place';
+const url = 'https://peacecodes-hazel.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title,
   description,
   keywords: [
+    'PeaceCodes',
+    'Peace Oloruntoba',
     'Frontend Developer',
     'Full Stack Developer',
     'React Developer',
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
     'Python Developer',
     'Mobile Developer',
     'React Native Developer',
-    'Flutter Developer',
+    'Golang Developer',
   ],
   creator: 'Peace Oloruntoba',
   themeColor: [

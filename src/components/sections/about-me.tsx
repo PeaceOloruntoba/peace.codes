@@ -43,7 +43,7 @@ const AboutMeSection = () => {
             >
               self-proclaimed software engineer
             </Link>{' '}
-            who specializes in full stack development (React.js & Django). I am
+            who specializes in full stack development (React/Next.js & Node.js). I am
             enthusiastic about bringing the technical and visual aspects of
             digital products to life. User experience, pixel perfect design, and
             writing clear, readable, highly performant code matters to me.
@@ -52,10 +52,10 @@ const AboutMeSection = () => {
             I began my journey as a web developer in 2021, and since then,
             I&apos;ve continued to grow and evolve as a developer, taking on new
             challenges and learning the latest technologies along the way. Now,
-            in my early twenties, 3 years after starting my web development
-            journey, I&apos;m building cutting-edge web applications using
-            modern technologies such as Next.js, TypeScript, Nodesjs, Express,
-            Tailwindcss, Supabase and much more.
+            with {new Date().getFullYear() - 2021}+ years of experience, I&apos;m
+            building cutting-edge web applications using modern technologies
+            such as Next.js, TypeScript, Node.js, Express, Tailwind CSS,
+            Supabase and much more.
           </Typography>
           <Typography>
             I am very much a progressive thinker and enjoy working on products
@@ -90,7 +90,7 @@ const AboutMeSection = () => {
           <div className="flex flex-col gap-2 md:flex-row md:gap-6">
             <ul className="flex list-inside list-disc flex-col gap-2">
               <Typography component="li">
-                B.E. in Computer Engineering
+                B.Sc. in Computer Science
               </Typography>
               <Typography component="li">Full time freelancer</Typography>
             </ul>
