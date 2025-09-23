@@ -233,6 +233,7 @@ export const TECHNOLOGIES: TechDetails[] = [
   },
   {
     label: "Java",
+    logo: LogoJava,
     url: "https://www.oracle.com/java/",
   },
   {
@@ -241,6 +242,7 @@ export const TECHNOLOGIES: TechDetails[] = [
   },
   {
     label: "C#",
+    logo: LogoCSharp,
     url: "https://dotnet.microsoft.com/languages/csharp",
   },
   {
