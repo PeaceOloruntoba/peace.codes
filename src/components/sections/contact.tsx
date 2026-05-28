@@ -1,98 +1,124 @@
-'use client';
+// src/components/sections/Contact.tsx
+import React, { useState } from "react";
+import {
+  Mail,
+  Phone,
+  Copy,
+  Check,
+} from "lucide-react";
+import { contactInfo } from "../../data/contact";
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
-import { useState } from 'react';
-import { Copy, Mail, Phone } from 'lucide-react';
-// import Link from 'next/link';
+const Contact: React.FC = () => {
+  const [copiedType, setCopiedType] = useState<string | null>(null);
 
-import SocialIcons from '@/components/data-display/social-icons';
-import Tag from '@/components/data-display/tag';
-import IconButton from '@/components/general/icon-button';
-import Typography from '@/components/general/typography';
-import Container from '@/components/layout/container';
-import useWindowSize from '@/hooks/use-window-size';
-import { copyTextToClipboard } from '@/lib/utils';
-
-const email = 'peaceoloruntoba22@gmail.com';
-const phone = '+2348166846226';
-
-type CopyValue = 'email' | 'phone';
-
-const ContactSection = () => {
-  const { width } = useWindowSize();
-  const [isCopied, setIsCopied] = useState(false);
-  const [copiedValueType, setCopiedValueType] = useState<CopyValue | null>(
-    null
-  );
-
-  const handleCopyClick = async (text: string, type: CopyValue) => {
-    try {
-      await copyTextToClipboard(text);
-      setIsCopied(true);
-      setCopiedValueType(type);
-      const timoutId: ReturnType<typeof setTimeout> = setTimeout(() => {
-        setIsCopied(false);
-        setCopiedValueType(null);
-        clearTimeout(timoutId);
-      }, 1500);
-    } catch {
-      setIsCopied(false);
-      setCopiedValueType(null);
-      alert('Unable to copy!');
-    }
+  const handleCopy = (text: string, type: string) => {
+    navigator.clipboard.writeText(text);
+    setCopiedType(type);
+    setTimeout(() => setCopiedType(null), 2000);
   };
 
   return (
-    <Container id="contact">
-      <div className="flex flex-col items-center gap-4">
-        <div className="self-center">
-          <Tag label="Get in touch" />
+    <section
+      id="contact"
+      className="py-20 md:py-28 px-6 bg-zinc-50 dark:bg-zinc-950"
+    >
+      <div className="max-w-3xl mx-auto text-center">
+        {/* Section Header Pill */}
+        <div className="flex flex-col items-center mb-6">
+          <span className="px-4 py-1.5 rounded-full bg-zinc-200/60 dark:bg-zinc-800 text-xs font-semibold tracking-wider text-zinc-800 dark:text-zinc-300 uppercase border border-zinc-300/40 dark:border-zinc-700">
+            Get in touch
+          </span>
         </div>
-        <Typography variant="subtitle" className="max-w-xl text-center">
-          What&apos;s next? Feel free to reach out to me if you are looking for a
-          developer, have a query, or simply want to connect.
-        </Typography>
-      </div>
 
-      <div className="flex flex-col items-center gap-6 md:gap-12">
-        <div className="flex flex-col items-center md:gap-4">
-          <div className="flex items-center gap-4 md:gap-5">
-            <Mail className="h-6 w-6 md:h-8 md:w-8" />
-            {/* <Link href={`mailto:${email}`}> */}
-            <Typography variant="h2">{email}</Typography>
-            {/* </Link> */}
-            <IconButton
-              size={width && width < 768 ? 'md' : 'lg'}
-              onClick={() => handleCopyClick(email, 'email')}
-              showTooltip={isCopied && copiedValueType === 'email'}
-              tooltipText="Copied!"
+        {/* Section Heading Description */}
+        <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-xl mx-auto mb-12">
+          What’s next? Feel free to reach out to me if you’re looking for a
+          developer, have a query, or simply want to connect.
+        </p>
+
+        {/* Large Interactive Contact Triggers */}
+        <div className="flex flex-col items-center gap-6 mb-12">
+          {/* Email Row */}
+          <div className="flex items-center gap-4 group">
+            <Mail className="size-6 md:size-8 text-zinc-500 dark:text-zinc-400" />
+            <a
+              href={`mailto:${contactInfo.email}`}
+              className="text-xl md:text-3xl font-extrabold tracking-tighter text-zinc-950 dark:text-zinc-50 hover:text-sky-500 dark:hover:text-sky-400 transition-colors"
             >
-              <Copy />
-            </IconButton>
+              {contactInfo.email}
+            </a>
+            <button
+              onClick={() => handleCopy(contactInfo.email, "email")}
+              className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 transition-colors"
+              aria-label="Copy email address"
+            >
+              {copiedType === "email" ? (
+                <Check size={20} className="text-sky-500" />
+              ) : (
+                <Copy size={20} />
+              )}
+            </button>
           </div>
-          <div className="flex items-center gap-4 md:gap-5">
-            <Phone className="h-6 w-6 md:h-8 md:w-8" />
-            {/* <Link href={`tel:${phone.replace(' ', '')}`}> */}
-            <Typography variant="h2">{phone}</Typography>
-            {/* </Link> */}
-            <IconButton
-              size={width && width < 768 ? 'md' : 'lg'}
-              onClick={() => handleCopyClick(phone.replace(' ', ''), 'phone')}
-              showTooltip={isCopied && copiedValueType === 'phone'}
-              tooltipText="Copied!"
+
+          {/* Phone Row */}
+          <div className="flex items-center gap-4 group">
+            <Phone className="size-6 md:size-8 text-zinc-500 dark:text-zinc-400" />
+            <a
+              href={`tel:${contactInfo.phone}`}
+              className="text-xl md:text-3xl font-extrabold tracking-tighter text-zinc-950 dark:text-zinc-50 hover:text-sky-500 dark:hover:text-sky-400 transition-colors"
             >
-              <Copy />
-            </IconButton>
+              {contactInfo.phone}
+            </a>
+            <button
+              onClick={() => handleCopy(contactInfo.phone, "phone")}
+              className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 transition-colors"
+              aria-label="Copy phone number"
+            >
+              {copiedType === "phone" ? (
+                <Check size={20} className="text-sky-500" />
+              ) : (
+                <Copy size={20} />
+              )}
+            </button>
           </div>
         </div>
-        <div className="flex flex-col items-center gap-2">
-          <Typography className="text-center">
-            You may also find me on these platforms!
-          </Typography>
-          <SocialIcons />
+
+        {/* Secondary Social Interconnectivity Subtitle */}
+        <div className="flex flex-col items-center gap-3">
+          <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
+            You may also find me on these platforms:
+          </p>
+          <div className="flex items-center gap-4 text-zinc-500 dark:text-zinc-400">
+            <a
+              href={contactInfo.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sky-500 transition-colors p-2"
+            >
+              <FaGithub size={20} />
+            </a>
+            <a
+              href={contactInfo.twitterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sky-500 transition-colors p-2"
+            >
+              <FaTwitter size={20} />
+            </a>
+            <a
+              href={contactInfo.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sky-500 transition-colors p-2"
+            >
+              <FaLinkedin size={20} />
+            </a>
+          </div>
         </div>
       </div>
-    </Container>
+    </section>
   );
 };
 
-export default ContactSection;
+export default Contact;

@@ -1,34 +1,100 @@
-<h1 align="center">
-  PeaceCodes - Peace Oloruntoba
-</h1>
-<p align="center">
-  My portfolio website built with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, <a href="https://www.radix-ui.com" target="_blank">Radix UI</a> and deployed on <a href="https://www.vercel.com/" target="_blank">Vercel</a>.⚡
-</p>
+# React + TypeScript + Vite
 
-![preview](https://raw.githubusercontent.com/PeaceOloruntoba/peace.codes/main/thumbnail.png)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Tech Stack
+Currently, two official plugins are available:
 
-- [Next.js](https://nextjs.org) - React framework for building performant apps with the best developer experience
-- [TypeScript](https://typescriptlang.org) - Static type checker for end-to-end typesafety
-- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework for rapid UI development
-- [Radix UI](https://www.radix-ui.com/) - Primitives like drawer, button, etc. to build a stellar user experience
-- [Lucide Icons](https://lucide.dev) - Beautifully simple, pixel-perfect icons
-- [Next Themes](https://github.com/pacocoursey/next-themes) - An abstraction for themes (Dark + Light Mode).
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Running Locally
+## React Compiler
 
-```bash
-$ git clone https://github.com/PeaceOloruntoba/peace.codes.git
-$ cd peace.codes
-$ npm install
-$ npm run dev
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+
+Note: This will impact Vite dev & build performances.
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
-<!-- 
-## Figma
 
-If you are looking for a figma file, you can find it **[here](https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop)**. -->
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-## License
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-Licensed under the [MIT license](https://github.com/PeaceOloruntoba/peace.codes/blob/main/LICENSE).
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
+
+
+
+/src
+  /components
+    /sections
+      Header.tsx
+      Hero.tsx
+      About.tsx
+      Skills.tsx
+      Experience.tsx
+      Projects.tsx
+      Testimonial.tsx
+      Contact.tsx
+      Footer.tsx
+    /ui
+      ScrollToTop.tsx
+  /data
+    aboutContent.ts
+    contactContent.ts
+    experienceData.ts
+    projectsData.ts
+    skillsData.ts
+    testimonialsData.ts
+  App.tsx
