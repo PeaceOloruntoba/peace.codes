@@ -17,11 +17,10 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
 
   const Logo = () => (
     <div className="flex items-center gap-2 font-mono font-extrabold text-2xl tracking-tighter text-zinc-950 dark:text-zinc-50">
-      {/* Fancy initials logo P.O. + icon */}
       <Briefcase className="size-7 text-sky-500" />
       <div className="flex items-baseline">
         <span className="text-zinc-950 dark:text-zinc-50">P</span>
-        <span className="text-zinc-500">.</span>
+        <span className="text-sky-500 font-bold ml-0.5">e</span>
         <span className="text-zinc-950 dark:text-zinc-50">O</span>
         <span className="text-zinc-500 font-bold ml-0.5">/&gt;</span>
       </div>
@@ -42,7 +41,9 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
                   href={`#${link.toLowerCase()}`}
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById(link.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
+                    document
+                      .getElementById(link.toLowerCase())
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="hover:text-sky-500 transition"
                 >
@@ -53,7 +54,6 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
           </ul>
 
           <div className="flex items-center gap-4">
-            {/* Theme Toggle Button */}
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="p-2.5 rounded-lg bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-sky-500/50 transition-colors"
@@ -89,36 +89,47 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay - Figma References: MobileMenuLight.png, MobileMenuDark.png */}
+      {/* Mobile Menu Wrapper */}
       {menuOpen && (
-        <div className="fixed inset-0 top-[73px] bg-white dark:bg-zinc-950 z-40 p-8 flex flex-col md:hidden animate-fade-in-down border-t dark:border-zinc-800">
-          <ul className="flex flex-col gap-6 text-xl font-semibold text-zinc-800 dark:text-zinc-200">
-            {navLinks.map((link) => (
-              <li key={link}>
-                <a
-                  href={`#${link.toLowerCase()}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById(link.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
-                    toggleMenu();
-                  }}
-                  className="block hover:text-sky-500 transition"
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="fixed inset-0 top-[73px] h-[calc(100vh-73px)] z-40 md:hidden flex">
+          {/* 1. 80% Drawer Content (Sliding/appearing from the left) */}
+          <div className="w-[80%] max-w-[400px] h-full p-8 flex flex-col justify-between bg-zinc-50 dark:bg-zinc-950 border-r border-zinc-200/50 dark:border-zinc-800/50 shadow-2xl">
+            <ul className="flex flex-col gap-6 text-xl font-semibold text-zinc-800 dark:text-zinc-200">
+              {navLinks.map((link) => (
+                <li key={link}>
+                  <a
+                    href={`#${link.toLowerCase()}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById(link.toLowerCase())
+                        ?.scrollIntoView({ behavior: "smooth" });
+                      toggleMenu();
+                    }}
+                    className="block hover:text-sky-500 transition"
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
-          <div className="mt-auto pt-8 border-t border-zinc-100 dark:border-zinc-800">
-            <a
-              href={`mailto:${contactInfo.email}`}
-              onClick={toggleMenu}
-              className="block w-full text-center px-6 py-3.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-950 font-bold text-lg hover:bg-sky-600 dark:hover:bg-sky-400 transition"
-            >
-              Hire Me
-            </a>
+            <div className="pt-8 border-t border-zinc-100 dark:border-zinc-800">
+              <a
+                href={`mailto:${contactInfo.email}`}
+                onClick={toggleMenu}
+                className="block w-full text-center px-6 py-3.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-950 font-bold text-lg hover:bg-sky-600 dark:hover:bg-sky-400 transition"
+              >
+                Hire Me
+              </a>
+            </div>
           </div>
+
+          {/* 2. Remaining Width Overlay (Click to close with backdrop blur) */}
+          <div
+            onClick={toggleMenu}
+            className="flex-1 h-full bg-black/20 dark:bg-black/40 backdrop-blur-sm cursor-pointer"
+          />
         </div>
       )}
     </header>
