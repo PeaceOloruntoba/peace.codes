@@ -36,15 +36,15 @@ const Experience: React.FC = () => {
                   <img
                     src={exp.logoUrl}
                     alt={`${exp.company} logo`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-fit"
                     onError={(e) => {
                       // Fallback typography visual if image asset is temporarily missing
                       e.currentTarget.style.display = "none";
                     }}
                   />
-                  <span className="text-xs font-extrabold text-zinc-400 select-none absolute">
+                  {/* <span className="text-xs font-extrabold text-zinc-400 select-none absolute">
                     {exp.company.substring(0, 2).toUpperCase()}
-                  </span>
+                  </span> */}
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-zinc-950 dark:text-zinc-50 leading-tight">
