@@ -13,6 +13,22 @@ export interface ProjectItem {
 export const projectsData: ProjectItem[] = [
   {
     id: 1,
+    title: "VC-Store",
+    description:
+      "A high-performance e-commerce platform for a premier sports apparel and equipment brand. Features a seamless shopping experience, dynamic product categorization for jerseys and footwear, secure checkout, and an optimized interface designed to handle high-volume retail traffic.",
+    techStack: [
+      "JavaScript",
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
+    liveUrl: "https://shopfromvcstore.com",
+    imageFallback: "VC",
+  },
+  {
+    id: 2,
     title: "Kunibi Fashion Software",
     description:
       "A comprehensive SaaS platform built for professional fashion designers to streamline client management, store body measurements, catalog internal notes, and manage complex design lifecycles. Features an interactive Design Board to draw patterns alongside an AI Pattern Enhancer & Generator powered by Google Gemini AI.",
@@ -27,7 +43,7 @@ export const projectsData: ProjectItem[] = [
     imageFallback: "KF",
   },
   {
-    id: 2,
+    id: 3,
     title: "BunziMeal Planner",
     description:
       "An intelligent, cross-platform AI-driven meal planning and nutritional ecosystem. It features a personalized AI Nutritionist and AI Dietician that dynamically generates automated weekly meal schedules, builds optimized shopping lists, manages real-time pantry inventory, and executes detailed health and diet tracking tailored to custom user preferences.",
@@ -43,7 +59,7 @@ export const projectsData: ProjectItem[] = [
     imageFallback: "BM",
   },
   {
-    id: 3,
+    id: 4,
     title: "Nikita Restaurant AI",
     description:
       "A highly scalable, cross-platform enterprise application built for the hospitality industry. It empowers independent restaurants to maximize commercial growth by deploying custom-trained, localized AI systems backed by a highly performance-optimized backend infrastructure to automate personalized guest interactions.",
@@ -59,7 +75,7 @@ export const projectsData: ProjectItem[] = [
     imageFallback: "NR",
   },
   {
-    id: 4,
+    id: 5,
     title: "MyFarmSight",
     description:
       "A robust, production-ready agricultural supply chain ecosystem built completely from scratch and successfully deployed to production. This comprehensive platform consists of full-scale web modules linked seamlessly with native Android and iOS mobile applications published on the Google Play Store and Apple App Store.",
@@ -75,7 +91,7 @@ export const projectsData: ProjectItem[] = [
     imageFallback: "MF",
   },
   {
-    id: 5,
+    id: 6,
     title: "Nigeria States Free API",
     description:
       "An open-source developer tool providing a public, highly performant REST API to fetch comprehensive geographical information about Nigeria, including all states and their respective Local Government Areas (LGAs). Currently scaling the core datasets to safely map out population indices, total landmass calculations, and regional socio-political data points.",
@@ -85,7 +101,7 @@ export const projectsData: ProjectItem[] = [
     imageFallback: "NG",
   },
   {
-    id: 6,
+    id: 7,
     title: "Esther Ekoko Portfolio",
     description:
       "A premium, lightning-fast digital portfolio website designed and optimized for modern web presence. Built leveraging advanced Next.js server architectural patterns and utility-first Tailwind CSS classes, backed by comprehensive programmatic Search Engine Optimization (SEO) mapping for pristine discoverability.",
