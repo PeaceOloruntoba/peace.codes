@@ -55,7 +55,7 @@ export const projectsData: ProjectItem[] = [
       "Node.js",
       "Tailwind CSS",
     ],
-    liveUrl: "https://bunzimeal-planner.vercel.app",
+    liveUrl: "https://bunzimeal.com",
     imageFallback: "BM",
   },
   {
